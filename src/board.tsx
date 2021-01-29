@@ -1,9 +1,9 @@
 import React from 'react';
 import Square from './square';
 
-function Board (props) {
+function Board (props: any) {
   
-    const renderSquare = (i) => {
+    const renderSquare = (i: number) => {
       return <Square value={props.squares[i]} onClick={() => props.onClick(i)}/>;
     }
   
